@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #0094ff;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #0094ff;
+            padding: 10px;
+            text-align: center;
+            color: White;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body style="background-color:FloralWhite;">
+    <header>
+        <h2>TYPOS</h2>
+    </header>
+
+    <section>
+        <nav>
+            <center>
+                <ul>
+                    <li><a href="https://localhost:5001/Page1" class="w3-button w3-bar-item">Home</a></li>
+                    <li><a href="https://localhost:5001/Account/Login" class="w3-button w3-bar-item">Login</a></li>
+                    <li><a href="https://localhost:5001/Account/Create" class="w3-button w3-bar-item">Create an account</a></li>
+                    <li><a href="#FAQ" class="w3-button w3-bar-item">FAQ</a></li>
+                    <li><a href="#Policy" class="w3-button w3-bar-item">Policy</a></li>
+                </ul>
+            </center>
+        </nav>
+
+        <article>
+            <h1>What is TYPOS?</h1>
+            <p>With a wide variety of internet services available on the market, there is bound to be spam, malware, and bots attaching themselves to reputable sites in an attempt to sway the users’ perception of the product. User reviews give the buyer a look into the product, with poorly reviewed products staying unpurchased and well reviewed products becoming widespread. Online markets are fueled by reputation, and with competitors having an arsenal of tools that have the ability to stain a brand name, it is difficult for the honest opinions to shine. This is where Typos comes into play.</p>
+            <p>To find out more information, press on one of the links.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>©2020 Typos Group, Inc All Rights Reserved. Typos is a registered trademark of Typos Group, Inc. All other trademarks herein are the property of their respective owners.</p>
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+    </footer>
+
+</body>
+</html>

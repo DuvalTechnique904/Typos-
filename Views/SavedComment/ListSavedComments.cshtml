@@ -1,0 +1,19 @@
+﻿@model SavedCommentsListViewModel
+
+<h2>Comments</h2>
+
+@foreach (var p in Model.SavedComments)
+            {
+                @Html.Partial("SavedCommentSummary", p)
+            }
+
+<div page-model="@Model.PagingInfo" page-action="ListComments" page-classes-enabled="true"
+     page-class="btn" page-class-normal="btn-default"
+     page-class-selected="btn-primary" class="btn-group float-right">
+</div>
+
+<div class="text-center">
+    <a class="btn btn-primary" asp-action="PostComment" asp-controller="NewComment">
+        Leave a Comment
+    </a> 
+</div>
